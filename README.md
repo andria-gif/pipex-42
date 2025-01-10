@@ -1,4 +1,4 @@
-# pipex-42
+# pipex-42SP
 
 ## **Descrição Geral**
 Este projeto simula o comportamento de pipelines no terminal Linux, permitindo redirecionar a entrada e saída entre comandos através de um pipe.

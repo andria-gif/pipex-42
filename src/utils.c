@@ -85,13 +85,13 @@ void	ft_exec(char *argv, char **envp)
 	cmd = ft_split(argv, ' ');
 	if (!cmd || !cmd[0])
 	{
+		ft_free(cmd);
 		perror("comand not faund");
 		exit(127);
 	}
 	path = find_paths(*cmd, envp);
 	if (!path)
 	{
-		ft_free(&path);
 		perror("Command not found");
 		exit(127);
 	}
